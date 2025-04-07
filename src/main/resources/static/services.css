@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #2c3e50;
+    color: white;
+}
+
+.header div {
+    display: flex;
+    align-items: center;
+}
+
+.header div img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.header h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.header h2 span {
+    color: #f39c12;
+    font-size: 70%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #8fca91;
+}
+
+/*  Responsive Design  */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header div {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .header div img {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+video {
+    margin: 100px 450px;
+}
+
+.services-heading-text {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+}
+
+.services-heading-text h3 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.our-services-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.our-services-container div {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 320px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.our-services-container div:hover { 
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.our-services-container img {
+    width: 100%;
+    max-width: 280px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.our-services-container h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.our-services-container p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .our-services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .our-services-container div {
+        width: 90%;
+    }
+}
+
+/* = = = = = = =  Footer = = = = = = =  */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #222;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.footer > div {
+    flex: 1 1 220px;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #195d19;
+}
+
+.footer a {
+    display: block;
+    color: #ddd;
+    text-decoration: none;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #169216;
+}
+
+.coloum-1 p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-right: 20px;
+}
+
+.coloum-3 p,
+.coloum-4 p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.social-media a {
+    font-size: 20px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #169216;
+}
+
+.coloum-4 img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+/* Footer Responsive */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+  
+    .footer > div {
+        margin-left: 0;
+    }
+  
+    .social-media {
+        justify-content: center;
+    }
+}

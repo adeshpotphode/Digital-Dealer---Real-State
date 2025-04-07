@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE REAL STATE - Business</title>
+    <link rel="stylesheet" href="for-sale.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header">
+        <div>
+            <a href="/"><img src="/img/the real state.png" alt="image not found"></a>
+            <h2>THE REAL STATE  <br>  <span>Business PVT LTD</span></h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="AboutUs">About Us</a></li>
+                <li><a href="Services">Services</a></li>
+                <li><a href="Projects">Projects</a></li>
+                <li><a href="Contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="heading-text">
+        <h3>Property Submission Form</h3>
+        <h3>Please Provide the Required Details</h3>
+    </div>
+    <div class="form">
+        <form action="/Save" method="post" enctype="multipart/form-data">
+            <input type="hidden" id="id" name="id">
+            
+            <div class="form-group">
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="contact">Contact: </label>
+                <input type="tel" id="contact" name="contact" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="plot_Area">Plot Area: </label>
+                <input type="text" id="plot_Area" name="plot_Area" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="price">Price: </label>
+                <input type="number" id="price" name="price" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="address">Address: </label>
+                <input type="text" id="address" name="address" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="userimage">Upload Image:</label>
+                <input type="file" id="userimage" name="userimage">
+            </div>
+    
+            <input type="submit" value="Upload Details">
+        </form>
+    </div>
+
+    <div class="footer">
+        <div class="coloum-1">
+            <h3>Excellence</h3>
+            <p>We prioritize quality, innovation and customer satisfaction, turning dreams into reality. Explore about Indore's leading real estate firm specializing in plots, row houses, flats and bungalows.</p>
+        </div>
+        <div class="coloum-2">
+            <h3>Quick Links</h3>
+            <a href="/">Home</a>
+            <a href="AboutUs">About Us</a>
+            <a href="Services">Services</a>
+            <a href="Projects">Projects</a>
+            <a href="Contact">Contact Us</a>
+        </div>
+        <div class="coloum-3">
+            <h3>Contact Info</h3>
+            <p>Follow us:</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>ABC, Vijay Nagar, Indore, India</p>
+            <p>Chat with us: +91 98765 43210</p>
+            <p>Phone: 123-456-7890</p>
+            <p>Email: 5e9Ud@example.com</p>
+        </div>
+        <div class="coloum-4">
+            <h3>Projects</h3>
+            <img src="/img/prop_villa.png" alt="image not found">
+            <p>Laal Baag Palace Villa, Indore</p>
+            <a href="Projects">Explore More</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* = = = = = = = header = = = = = = = */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #2c3e50;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.header div {
+    display: flex;
+    align-items: center;
+}
+
+.header div img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.header h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.header h2 span {
+    color: #f39c12;
+    font-size: 70%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #8fca91;
+}
+
+@media (max-width: 768px) {
+  .header {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .header div {
+      flex-direction: column;
+      margin-bottom: 10px;
+  }
+
+  nav ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+}
+
+/* = = = = = Form Section = = = = = */
+.heading-text {
+    text-align: center;
+    margin: 30px 0 20px;
+}
+
+.heading-text h3 {
+    color: #333;
+    font-size: 26px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.form form {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+label {
+  font-weight: bold;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #218838;
+}
+
+/* = = = = = = =  Footer = = = = = = =  */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #222;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.footer > div {
+  flex: 1 1 220px;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.footer h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #195d19;
+}
+
+.footer a {
+  display: block;
+  color: #ddd;
+  text-decoration: none;
+  margin: 10px 0;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #169216;
+}
+
+.coloum-1 p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-right: 20px;
+}
+
+.coloum-3 p,
+.coloum-4 p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.social-media {
+  display: flex;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.social-media a {
+  font-size: 20px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #169216;
+}
+
+.coloum-4 img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .footer > div {
+      margin-left: 0;
+  }
+
+  .social-media {
+      justify-content: center;
+  }
+}

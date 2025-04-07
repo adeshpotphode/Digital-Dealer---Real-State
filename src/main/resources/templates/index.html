@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE REAL STATE - Business</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="header">
+        <div>
+            <a href="/"><img src="/img/the real state.png" alt="image not found"></a>
+            <h2>THE REAL STATE  <br>  <span>Business PVT LTD</span></h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="AboutUs">About Us</a></li>
+                <li><a href="Services">Services</a></li>
+                <li><a href="Projects">Projects</a></li>
+                <li><a href="Contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+
+    <div class="business-button">
+        <a th:href="@{/For-Sale}" class="business-button-for-sale"><Button>For Sale</Button></a>
+        <a th:href="@{/For-Buy}" class="business-button-for-buy"><Button>For Buy</Button></a>
+    </div>
+
+  
+    <div class="business-line">
+        <h4>Best Property Broker & Real Estate Advisor in Indore</h4>
+        <div class="business-content">
+            <div class="business-line-msg">
+                <p> Welcome to THE REAL STATE Business, your trusted real broker in Indore, specializing in premium commercial and residential plots at the high-demand location of Indore, we pride ourselves on being a reliable property broker in Indore property market.
+                    <br><br>
+                    THE REAL STATE Business PVT LTD - Property Enterprises in Decorative Super Gallery Plot is fast emerging as one of the most promising real estate schemes in the city. With several major developments underway including the Mall, Plaza Hotel and Point Amenities, the area is garnering significant attention from Emirates Brokers in Indore.
+                    <br><br>
+                        Driven by forces such as reliability and credibility, we aim to create homes that are brimming with acumen. As a trusted Emirates Consultancy at Advart, we provide personalized services and are dedicated to building lasting relationships. By focusing on client satisfaction, we strive to make every investment a step towards an institutional future.</p>
+                </p> <br><br>
+                <a href="Contact"><button>Contact Us</button></a>   
+            </div>
+            <div class="business-line-img">
+                <img src="/img/frist-villa.png" alt="image not found">
+            </div>
+        </div>
+    </div>
+        
+        
+      
+
+
+    <div class="home-contrainer">
+        <h4>We provide the best services to enhance your experience.</h4>
+        <h5>We are your trusted partner in Indore for investing in the real estate market</h5>
+        <div class="frist-image">
+            <img src="/img/home-image.webp" alt="image not found">
+            <p>Welcome to THE REAL STATE Business, your trusted property investor in Indore specializing in premium commercial and residential plots in high demand locations in Indore. At THE REAL STATE Business, we have earned a trusted position in the real estate market of Indore, it is a matter of great pride and joy for us. </p>
+            <img src="/img/home-image-2.webp" alt="image not found">
+        </div>        
+        <div class="services">
+            <h2>Our Services</h2>
+            <div class="our-services-container">
+                <div class="service-1">
+                    <img src="/img/Property-Investment.jpeg" alt="image not found">
+                    <h3>Property Investment Advisory</h3>
+                    <p>Maximize your returns with our expert property investment advisory services.  in prime locations like the Super Corridor plots and beyond.</p>
+                </div>
+    
+                <div class="service-2">
+                    <img src="/img/Home-Loan.webp" alt="image not found">
+                    <h3>Home Loan Services</h3>
+                    <p>Make your home buying journey easier with our reliable home loan services. We offer flexible options and expert assistance to make your dream home a reality.</p>
+                </div>
+                <div class="service-3">
+                    <img src="/img/Loan_Services.jpeg" alt="image not found">
+                    <h3>Commercial Loan Services</h3>
+                    <p>Explore customized commercial loan services designed to meet your business needs. With flexible terms and expert guidance, we help you secure financing for your growth and success.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="count-numbers-container">
+        <div class="counter-box">
+            <span class="counter" data-target="20">0</span>+<br>Projects
+        </div>
+        <div class="counter-box">
+            <span class="counter" data-target="1000">0</span>+<br>Happy Clients
+        </div>
+        <div class="counter-box">
+            <span class="counter" data-target="8">0</span>+<br>Years Experience
+        </div>
+        <div class="counter-box">
+            <span class="counter" data-target="100">0</span>%<br>Easy Search
+        </div>
+    </div>   
+    <script>
+        function animateCounter(counter) {
+            let target = +counter.getAttribute("data-target");
+            let count = 0;
+            let increment = target / 100;  // Smooth animation
+
+            function updateCount() {
+                if (count < target) {
+                    count += increment;
+                    counter.innerText = Math.ceil(count);
+                    requestAnimationFrame(updateCount);
+                } else {
+                    counter.innerText = target;
+                }
+            }
+            updateCount();
+        }
+
+        document.querySelectorAll(".counter").forEach(animateCounter);
+    </script>
+
+    <div class="dream-home-container">
+        <h3>Building Dreams in Indore's Super Corridor</h3>
+        <div class="dream-home-coloum">
+            <div class="dream-home-coloum-1">
+                <div class="dream-home-image-1">
+                    <img src="/img/dream-home-image.jpg" alt="image not found">
+                </div>
+            </div>
+            <div class="dream-home-coloum-2">
+                <h4>Indore premium plots : Your Trusted Real Estate Partner</h4>
+                <p>THE REAL STATE BUSINESS PVT LTD - Property Enterprises in Decorative Super Gallery Plot is fast emerging as one of the most promising real estate schemes in the city. With several major developments underway including the Mall, Plaza Hotel and Point Amenities, the area is garnering significant attention from Emirates Brokers in Indore.
+                <br>
+                    Driven by forces such as reliability and credibility, we aim to create homes that are brimming with acumen. As a trusted Emirates Consultancy at Advart, we provide personalized services and are dedicated to building lasting relationships. By focusing on client satisfaction, we strive to make every investment a step towards an institutional future.</p>
+                <h4>Key developments</h4>
+                <p>The property will soon have several shopping malls and high-rise commercial buildings, which will contribute to the local industry and create employment opportunities.</p>
+                <a href="Projects"><button>Explore Projects</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="dream-home-container-2">
+        <h3>perfect Property With Perfect Road</h3>
+        <div class="dream-home-image-2">
+            <img src="/img/super-cor-in.webp" alt="image not found">
+            <p>THE REAL STATE BUSINESS PVT LTD - Property Enterprises in Decorative Super Gallery Plot is fast emerging as one of the most promising real estate schemes in the city.
+                <br>THE REAL STATE BUSINESS PVT LTD - Property Enterprises in Decorative Super Gallery Plot is fast emerging as one of the most promising real estate schemes in the city.
+            </p>
+            <img src="/img/super-cor-indore.webp" alt="image not found">
+        </div>
+    </div>
+
+    
+
+
+    <div class="invest-container">
+        <h3>Investing in Indore's Properties</h3>
+        <h5>Explore the best residential plots in prime locations of Indore, including Super Corridor, Mangalia, Vijay Nagar and Ujjain Road.</h5>
+        <div class="invest-details-coloum">
+            <div class="invest-details-coloum-1">
+                <div class="invest-tag">
+                    <h4>Prime Locations</h4>
+                    <p>Discover the perfect plot in Indore's prime locations, including the rapidly developing Indore property, offering unmatched connectivity and growth potential.</p>
+                </div>
+                <div class="invest-tag">
+                    <h4>Highly Demanding</h4>
+                    <p>Property dealer in Indore  has emerged as Indore’s most sought-after real estate hub due to its strategic location and rapid development.</p>
+                </div>
+                <div class="invest-tag">
+                    <h4>Affordable Price</h4>
+                    <p>Find premium residential plots at an affordable price in Indore, ensuring a great investment opportunity with high future returns.</p>
+                </div>
+            </div>
+            <div class="invest-details-coloum-2">
+                <img src="/img/prop_villa.png" alt="image not found">
+            </div>
+            <div class="invest-details-coloum-3">
+                <div class="invest-tag">
+                    <h4>Developing Area</h4>
+                    <p>The Indore property is rapidly evolving into a modern urban hub with state-of-the-art infrastructure, making it one of Indore  fastest-growing citys.</p>
+                </div>
+                <div class="invest-tag">
+                    <h4>Dream Home</h4>
+                    <p>Find your dream home in Indore's finest locations, offering premium amenities, modern infrastructure, and a vibrant community for a perfect lifestyle.</p>
+                </div>
+                <div class="invest-tag">
+                    <h4>Best Connectivity</h4>
+                    <p>Plots near highways, metro routes, hospitals, schools, and shopping malls and commercial hubs ensure seamless accessibility.</p>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="client-container">
+        <div class="client-commit">
+            <h3>Committed to Customer Satisfaction</h3>
+            <p>We prioritise customer satisfaction by providing personalised real estate solutions tailored to individual needs. Keeping transparency and trust at our core, we ensure a seamless and rewarding property buying experience.</p>
+        </div>
+        <div class="client-comment-details">
+            <h4>Excellent Service</h4>
+            <h5> ⭐⭐⭐⭐⭐</h5>
+            <p>"Excellent service! The team was professional, and the property options were outstanding. Highly recommended, "Seamless buying experience with premium locations and top-notch amenities. It is Best real estate advisory. Helped me find my dream home effortlessly."</p>
+            <div class="client-details">
+                <img src="/img/buyer_image.png" alt="image not found">
+                <h4>John D'souza <br> <span>Buyer</span></h4>
+            </div>
+        </div>
+        <div class="client-comment-details">
+            <h4>Excellent Service</h4>
+            <h5> ⭐⭐⭐⭐⭐</h5>
+            <p>"The team was incredibly helpful throughout the process. They provided me with excellent property options that perfectly matched my needs. Highly satisfied!" 5 stars rating, Best real estate advisory in Indore! This advisory Helped me find my perfect home.</p>
+            <div class="client-details">
+                <img src="/img/buyer_image-2.jpeg" alt="image not found">
+                <h4>Apsaraa Zuli <br> <span>Buyer</span></h4>
+            </div>
+        </div>
+        <div class="client-comment-details">
+            <h4>Excellent Service</h4>
+            <h5> ⭐⭐⭐⭐⭐</h5>
+            <p>"Exceptional service and premium property listings.Highly satisfied!" Best real estate advisory in Indore! This advisory Helped me find my perfect home. The advisors made the entire home-buying journey smooth and stress-free. Definitely worth it!"</p>
+            <div class="client-details">
+                <img src="/img/buyer_image-3.avif" alt="image not found">
+                <h4>Ramesh Kumar <br> <span>Buyer</span></h4>
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                let comments = document.querySelectorAll(".client-comment-details");
+                let index = 0;
+            
+                function showNextComment() {
+                    comments.forEach((comment, i) => {
+                        comment.style.display = i === index ? "block" : "none";
+                    });
+                    index = (index + 1) % comments.length;
+                }
+            
+                // पहले सिर्फ पहले div को दिखाएं
+                comments.forEach((comment, i) => {
+                    comment.style.display = i === 0 ? "block" : "none";
+                });
+            
+                setInterval(showNextComment, 1000); // Switch every 1 seconds
+            });
+        </script>
+            
+    </div>   
+    
+    <div class="footer">
+        <div class="coloum-1">
+            <h3>Excellence</h3>
+            <p>We prioritize quality, innovation and customer satisfaction, turning dreams into reality. Explore about Indore's leading real estate firm specializing in plots, row houses, flats and bungalows.</p>
+        </div>
+        <div class="coloum-2">
+            <h3>Quick Links</h3>
+            <a href="/">Home</a>
+            <a href="AboutUs">About Us</a>
+            <a href="Services">Services</a>
+            <a href="Projects">Projects</a>
+            <a href="Contact">Contact Us</a>
+        </div>
+        <div class="coloum-3">
+            <h3>Contact Info</h3>
+            <p>Follow us:</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>ABC, Vijay Nagar, Indore, India</p>
+            <p>Chat with us: +91 98765 43210</p>
+            <p>Phone: 123-456-7890</p>
+            <p>Email: 5e9Ud@example.com</p>
+        </div>
+        <div class="coloum-4">
+            <h3>Projects</h3>
+            <img src="/img/prop_villa.png" alt="image not found">
+            <p>Laal Baag Palace Villa, Indore</p>
+            <a href="Projects">Explore More</a>
+        </div>
+    </div>
+
+</body>
+</html>
