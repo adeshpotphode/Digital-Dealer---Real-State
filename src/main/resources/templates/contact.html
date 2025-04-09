@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="/css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>THE REAL STATE - Business</title>
 </head>
@@ -59,12 +59,12 @@
               
         </div>
         <div class="contact-form">
-            <form action="#">
-                <input type="text" placeholder="Frist Name">
-                <input type="text" placeholder="Last Name">
-                <input type="text" placeholder="Mobile Number">
-                <input type="text" placeholder="Add Email">
-                <textarea name="massage" id="massage" placeholder="Massage"></textarea>
+            <form action="#" th:action="@{/SaveVisiter}" th:object="${prop}" method="post">
+                <input type="text" th:field="*{frist_name}" placeholder="Frist Name">
+                <input type="text" th:field="*{last_name}" placeholder="Last Name">
+                <input type="text" th:field="*{mobile_number}" placeholder="Mobile Number">
+                <input type="text" th:field="*{email}" placeholder="Add Email">
+                <textarea th:field="*{massage}" id="massage" placeholder="Massage"></textarea>
                 <button type="submit">Send massage</button>
             </form> 
         </div>
