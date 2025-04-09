@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Glamour Salon - Website</title>
+    <link rel="stylesheet" href="/1stbean/appointmentlist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="header">
+        <h3 class="head">All Visiter List</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Frist Name</th>
+                    <th>Last Name</th>
+                    <th>Contacts</th>
+                    <th>Email</th>
+                    <th>Message</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="property:${allInquiriesList}">
+                    <td th:text="${property.frist_name}"></td>
+                    <td th:text="${property.last_name}"></td>
+                    <td th:text="${property.mobile_number}"></td>
+                    <td th:text="${property.email}"></td>
+                    <td th:text="${property.massage}"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
