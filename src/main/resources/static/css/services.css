@@ -186,17 +186,19 @@ video {
     color: #000;
     line-height: 2;
     border-radius: 8px;
+    background-color: #169216;
     margin: 10px 30px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }  
 
 .property-type-container {
+    font-size: 20px;
     display: flex;
     justify-content: space-between;
-    gap: 30px;
+    gap: 50px;
     padding: 40px 20px;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
     margin-bottom: 100px;
   }
@@ -208,10 +210,10 @@ video {
   
   .property-type-container h3 {
     text-align: center;
-    background: #ffffff;
     padding: 10px 15px;
     margin: 12px 0 12px 0;
     border-radius: 8px;
+    background-color: #169216;
     box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     font-weight: bold;
     color: #000;
