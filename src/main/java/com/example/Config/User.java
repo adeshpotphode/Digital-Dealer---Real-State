@@ -15,6 +15,10 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    private String fullName;
+    private String mobileNumber;
+    private String email;
+
     @Column(nullable = false, unique = true)
     private String username;
 
@@ -30,6 +34,30 @@ public class User {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    public String getMobileNumber() {
+        return mobileNumber;
+    }
+
+    public void setMobileNumber(String mobileNumber) {
+        this.mobileNumber = mobileNumber;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getUsername() {
@@ -58,6 +86,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User [id=" + id + ", username=" + username + ", password=" + password + ", role=" + role + "]";
+        return "User [id=" + id + ", fullName=" + fullName + ", mobileNumber=" + mobileNumber + ", email=" + email
+                + ", username=" + username + ", password=" + password + ", role=" + role + "]";
     }
 }

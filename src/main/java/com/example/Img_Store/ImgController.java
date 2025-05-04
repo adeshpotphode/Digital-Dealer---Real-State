@@ -29,11 +29,10 @@ public class ImgController {
     @PostMapping("/Save")
     public String save(@ModelAttribute Img i, @RequestParam("userimage") MultipartFile imageFile)
     throws IOException {
-        if (imageFile != null && !imageFile.isEmpty()) {
-            imgser.saveUser(i, imageFile.getBytes());
-        }
-        return "redirect:/For-Buy";
-            
+            if (imageFile != null && !imageFile.isEmpty()) {
+                imgser.saveUser(i, imageFile.getBytes());
+            }
+            return "redirect:/For-Buy";
         }
 
         @GetMapping("/For-Buy")
