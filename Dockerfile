@@ -1,11 +1,11 @@
-# Step 1: Build stage - Maven से jar बनाएगा
+# Step 1: Maven se jar banega
 FROM maven:3.9.6-eclipse-temurin-17 AS build
 WORKDIR /app
 COPY . .
 RUN mvn clean package -DskipTests
 
-# Step 2: Run stage - सिर्फ़ jar चलाएगा
-FROM openjdk:17-jdk-slim
+# Step 2: Sirf jar run hoga
+FROM eclipse-temurin:17-jdk-alpine
 WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
 EXPOSE 8080
