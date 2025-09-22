@@ -19,7 +19,6 @@ public class ImgController {
     ImgService imgser;
 
     
-
     @GetMapping("/For-Sale")
     public String for_Sale(Model model) {
         model.addAttribute("user", new Img());

@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* Header Styling */
+/* = = = = = = = Header Styling = = = = = = = */
 .header {
     display: flex;
     justify-content: space-between;
@@ -131,84 +131,7 @@ nav ul li a:hover {
     transform: rotate(-45deg) translateY(-8px);
 }
 
-/* .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    background: #2c3e50;
-    color: white;
-}
 
-.header div {
-    display: flex;
-    align-items: center;
-}
-
-.header div img {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    margin-right: 15px;
-}
-
-.header h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0;
-}
-
-.header h2 span {
-    color: #f39c12;
-    font-size: 70%;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    font-weight: 500;
-    transition: color 0.3s ease-in-out;
-}
-
-nav ul li a:hover {
-    color: #8fca91;
-}
-
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .header div {
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 10px;
-    }
-
-    .header div img {
-        margin-right: 0;
-        margin-bottom: 5px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-} */
 /* = = = = = = = = business-button = = = = = = = = */
 .business-button {
     display: flex;
@@ -248,6 +171,42 @@ nav ul li a:hover {
     background-color: rgb(0, 255, 0);
 }
 
+@media (max-width: 900px) {
+    .business-button{
+        margin: 150px auto;
+    }
+}
+
+@media (max-width: 442px) {
+    .business-button{
+        margin: 150px auto;
+    }
+    .business-button-for-sale button {
+    background-color: rgb(58, 58, 216);
+    color: black;
+    border: none;
+    padding: 30px 30px;
+    font-size: 26px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
+
+    .business-button-for-buy button {
+    background-color: green;
+    color: black;
+    border: none;
+    padding: 30px 30px;
+    font-size: 26px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
+}
+
+/* = = = = = = business-line = = = = = = */
 .business-line {
     display: flex;
     flex-direction: column;
@@ -311,6 +270,11 @@ nav ul li a:hover {
     height: auto;
 }
 
+@media (max-width: 900px) {
+    .business-line-msg {
+        display: none;
+    }
+}
 
 /* = = = = = = = = = Home Section = = = = = = = = */
 .home-contrainer {
@@ -361,6 +325,11 @@ nav ul li a:hover {
     color: #000;
     text-align: justify;
     max-width: 400px;
+}
+@media (max-width: 900px) {
+    .frist-image {
+        display: none;
+    }
 }
 
 /* = = = = (Home Section) Services = = = = */
@@ -461,6 +430,11 @@ nav ul li a:hover {
     font-size: 40px;
     font-weight: bold;
 }
+@media (max-width: 900px) {
+    .count-numbers-container {
+        display: none;
+    }
+}
 
 /* = = = = dream-home-container = = = = */
 .dream-home-container {
@@ -526,7 +500,13 @@ button {
 button:hover {
     background-color: #169216;
 }
+@media (max-width: 900px) {
+    .dream-home-coloum-2{
+        display: none;
+    }
+}
 
+/* = = = = = =  dream-home-container-2 = = = = = =  */
 .dream-home-container-2 h3 {
     display: flex;
     justify-content: center;
@@ -559,7 +539,14 @@ button:hover {
     color: #000;
     margin: 200px 20px;
 }
+@media (max-width: 900px) {
+    .dream-home-container-2 {
+        display: none;
+    }
+}
 
+
+/* = = = = = = invest-container = = = = = = */
 .invest-container {
     padding: 50px 60px;
     text-align: center;
@@ -629,6 +616,8 @@ button:hover {
     transition: transform 0.3s ease-in-out;
 }
 
+
+/* = = = = = = client-container = = = = = = */
 .client-container {
     position: relative;
     background-color: #a9c7ad;
@@ -718,31 +707,21 @@ button:hover {
     font-size: 18px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+    .client-commit {
+        display: none;
+        background: none;
+    }
     .client-comment-details {
+        position: static;
+        top: auto;
+        right: auto;
         max-width: 90%;
+        height: 25rem;
+        width: auto;
+        margin: 20px auto;
         padding: 20px;
-    }
 
-    .client-commit h3 {
-        font-size: 30px;
-    }
-
-    .client-commit p {
-        font-size: 16px;
-    }
-
-    .client-comment-details h4 {
-        font-size: 22px;
-    }
-
-    .client-comment-details p {
-        font-size: 15px;
-    }
-
-    .client-details img {
-        width: 50px;
-        height: 50px;
     }
 }
 
@@ -814,19 +793,64 @@ button:hover {
     border-radius: 8px;
 }
 
+.coloum-4 a {
+    display: inline-block;
+    background: green;
+    color: #fff;
+    padding: 5px 55px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #222;
+    border-radius: 20px;
+    text-decoration: none;
+    
+}
+
+.coloum-4 a:hover {
+    background: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.footer-bottom {
+    background-color: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 14px;
+    border-top: 1px solid #333;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+
 /* Footer Responsive */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        padding: 20px 10px;
     }
-
-    .footer>div {
-        margin-left: 0;
+    .footer > div {
+        margin: 10px 0;       
+        min-width: 100%;          
     }
-
+    .coloum-1 p {
+        margin-right: 0;          
+    }
     .social-media {
         justify-content: center;
+    }
+    .coloum-4 img {
+        max-width: 150px;
+    }
+    .footer-bottom {
+      font-size: 12px;
+      padding: 10px;
     }
 }

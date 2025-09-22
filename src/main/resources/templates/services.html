@@ -11,10 +11,19 @@
     <div class="header">
         <div>
             <a href="/"><img src="/img/the real state.png" alt="image not found"></a>
-            <h2>THE REAL STATE  <br>  <span>Business PVT LTD</span></h2>
+            <h2>THE REAL STATE <br><span>Business PVT LTD</span></h2>
         </div>
+
+        <!-- Hamburger Button -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Navbar -->
         <nav>
-            <ul>
+            <ul id="nav-links">
                 <li><a href="AboutUs">About Us</a></li>
                 <li><a href="Services">Services</a></li>
                 <li><a href="Projects">Projects</a></li>
@@ -22,6 +31,16 @@
             </ul>
         </nav>
     </div>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script><!-- = = = = = = = = header = = = = = = = = -->
 
     <video autoplay muted loop>
         <source src="/video/property.mp4" type="video/mp4">
@@ -88,40 +107,48 @@
         </div>
     </div>
 
-    <div class="footer">
-        <div class="coloum-1">
-            <h3>Excellence</h3>
-            <p>We prioritize quality, innovation and customer satisfaction, turning dreams into reality. Explore about Indore's leading real estate firm specializing in plots, row houses, flats and bungalows.</p>
-        </div>
-        <div class="coloum-2">
-            <h3>Quick Links</h3>
-            <a href="/">Home</a>
-            <a href="AboutUs">About Us</a>
-            <a href="Services">Services</a>
-            <a href="Projects">Projects</a>
-            <a href="Contact">Contact Us</a>
-        </div>
-        <div class="coloum-3">
-            <h3>Contact Info</h3>
-            <p>Follow us:</p>
-            <div class="social-media">
-                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+<!-- = = = = = = = = = = = = = =  Footer = = = = = = = = = = = = = =  -->
+    <footer>
+        <div class="footer">
+            <div class="coloum-1">
+                <h3>Excellence</h3>
+                <p>We prioritize quality, innovation and customer satisfaction, turning dreams into reality. Explore about
+                    Indore's leading real estate firm specializing in plots, row houses, flats and bungalows.</p>
             </div>
-            <p>ABC, Vijay Nagar, Indore, India</p>
-            <p>Chat with us: +91 98765 43210</p>
-            <p>Phone: 123-456-7890</p>
-            <p>Email: 5e9Ud@example.com</p>
+            <div class="coloum-2">
+                <h3>Quick Links</h3>
+                <a href="/">Home</a>
+                <a href="AboutUs">About Us</a>
+                <a href="Services">Services</a>
+                <a href="Projects">Projects</a>
+                <a href="Contact">Contact Us</a>
+            </div>
+            <div class="coloum-3">
+                <h3>Contact Info</h3>
+                <p>Follow us:</p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <p>ABC, Vijay Nagar, Indore, India</p>
+                <p>Chat with us: +91 98765 43210</p>
+                <p>Phone: 123-456-7890</p>
+                <p>Email: 5e9Ud@example.com</p>
+            </div>
+            <div class="coloum-4">
+                <h3>Projects</h3>
+                <img src="/img/prop_villa.png" alt="image not found">
+                <p>Laal Baag Palace Villa, Indore</p>
+                <a href="Projects">Explore More</a>
+            </div>
         </div>
-        <div class="coloum-4">
-            <h3>Projects</h3>
-            <img src="/img/prop_villa.png" alt="image not found">
-            <p>Laal Baag Palace Villa, Indore</p>
-            <a href="Projects">Explore More</a>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 the real state. All rights reserved.</p>
         </div>
-    </div>
+    </footer>
     
 </body>
 </html>
